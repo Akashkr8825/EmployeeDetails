@@ -1,0 +1,6 @@
+
+ <h3>Your Employee List</h3>
+ <div *ngFor="let employee of employee">
+     <app-employee-item [employee]="employee" (employeeDelete)="deleteEmployee($event)">
+    </app-employee-item>
+</div>
